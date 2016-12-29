@@ -4,8 +4,53 @@
   "description": "React lazyloader wrapper, high order component.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "NODE_ENV=development webpack-dev-server --hot --inline --history-api-fallback --config ./webpack/webpack.dev.config.js",
+    "compile": "NODE_ENV=production webpack -p --config ./webpack/webpack.production.config.js",
+    "static": "http-server ./dist -p 8080",
+    "build": "rm -rf ./dist/ && npm run compile",
+    "eslint": "eslint --ext .js,.jsx --ignore-path ./.eslintignore --fix ./src/*"
   },
   "author": "cabtravis@gmail.com",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^6.6.0",
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-transform-class-properties": "^6.19.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-object-rest-spread": "^6.20.2",
+    "babel-polyfill": "^6.20.0",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "css-loader": "^0.26.1",
+    "eslint": "^3.12.2",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-config-standard-jsx": "^3.2.0",
+    "eslint-config-standard-react": "^4.2.0",
+    "eslint-loader": "^1.6.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-react": "^6.8.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "html-webpack-plugin": "^2.24.1",
+    "http-server": "^0.9.0",
+    "postcss-loader": "^1.2.1",
+    "postcss-nested": "^1.0.0",
+    "precss": "^1.4.0",
+    "react-hot-loader": "^1.3.1",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2",
+    "webpack-merge": "^2.0.0"
+  },
+  "dependencies": {
+    "lodash.throttle": "^4.1.1",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "viewport-overlap-checker": "1.0.1"
+  }
 }
