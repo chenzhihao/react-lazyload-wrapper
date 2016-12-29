@@ -10,13 +10,16 @@ npm i --save react-lazyload-wrapper
 ### Usage
 
 ```javascript
- let LazyLoadPhoto = LazyLoadHOC(Photo);
-  ReactDOM.render(
-    <div>
-      <div style={{height: '2000px'}}> scroll</div>
-      <LazyLoadPhoto
-        thumbnailUrl={'ImagePath'}
-      />
-    </div>
-    , document.getElementById('app'));
+import LazyLoadHOC from 'react-lazyload-wrapper';
+import Photo from './Photo';
+
+let LazyLoadPhoto = LazyLoadHOC(Photo);
+ReactDOM.render(
+  <div>
+    <div style={{height: '2000px'}}> scroll</div>
+    <LazyLoadPhoto
+      thumbnailUrl={'ImagePath'}
+    />
+  </div>
+  , document.getElementById('app'));
 ```
