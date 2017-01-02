@@ -2,6 +2,8 @@
 
 > React higher order component which is used to make any another component become lazyload.
 
+[![NPM](https://nodei.co/npm/react-lazyload-wrapper.png)](https://nodei.co/npm/react-lazyload-wrapper/)
+
 ### Install
 ```sh
 npm i --save react-lazyload-wrapper
