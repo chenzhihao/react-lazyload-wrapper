@@ -9,7 +9,7 @@
 npm i --save react-lazyload-wrapper
 ```
 ## Showcase
-![](http://ofc9lijyu.bkt.clouddn.com/luping.gif)
+![](http://ofc9lijyu.bkt.clouddn.com/screencast.gif)
 
 ### Usage
 
