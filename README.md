@@ -9,7 +9,10 @@
 npm i --save react-lazyload-wrapper
 ```
 ## Showcase
-![](http://ofc9lijyu.bkt.clouddn.com/screencast.gif)
+![](https://zhihao.tech/react-lazyload-wrapper.gif)
+
+If github EAT my gif, check it here:
+https://zhihao.tech/react-lazyload-wrapper.gif
 
 ### Usage
 
